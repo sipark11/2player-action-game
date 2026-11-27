@@ -335,7 +335,8 @@ let winnerName = '무승부';
 if (winnerTeam) {
 room.wins[winnerTeam] = (room.wins[winnerTeam] || 0) + 1;
 winnerName = room.mode === '2v2'
-? ${winnerTeam} 팀`
+? `${winnerTeam} 팀`
+
 : (room.players[winnerTeam]?.nickname || '승자');
 }
 
